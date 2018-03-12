@@ -1,0 +1,160 @@
+.map-width{
+  width: 90vw;
+  height: 65vh;
+  position: absolute;
+  z-index: -1;
+}
+#map{
+  width: 100%;
+  height: 100%;
+}
+.contact-header-wraper {
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.contact-header-text-wraper {
+  width: 35vw;
+  height: 55vh;
+  margin: 30px;
+  position: relative;
+  z-index: 2;
+  background: rgba(201, 201, 201, 0.8);
+  @media #{$bigScreen} {
+    width: 90vw;
+  }
+  @media #{$phone} {
+    height: 40vh;
+  }
+  h2 {
+    font-family: 'Ubuntu';
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @media #{$phone} {
+      font-size: 30px;
+    }
+  }
+  h3 {
+    margin-top: 30px;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 100;
+  }
+}
+//....header
+
+
+
+//...section-one
+.contact-section-one{
+  width: 100vw;
+  height: auto;
+}
+.contact-section-one-wraper{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @media #{$bigScreen} {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contact-section-one-contacts-wraper{
+  width: 20%;
+  height: auto;
+  @media #{$bigScreen} {
+    width: 100%;
+  }
+  .contact-section-one-column{
+    width: 90%;
+    height: auto;
+    margin-bottom: 18px;
+    @media #{$bigScreen} {
+      width: 100%;
+    }
+    .contact-span-wraper {
+      width: 60px;
+      span {
+        font-size: 25px;
+        color: #333333;
+        width: 100px;
+      }
+    }
+  }
+}
+.contact-sec-one-text-wraper {
+  h3{
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  h4{
+    margin-bottom: 10px;
+    font-family: 'Ubuntu';
+    font-weight: 100;
+    size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #333333;
+  }
+}
+.contatc-sec-one-input-wraper{
+  width: 35%;
+  height: auto;
+  @media #{$bigScreen} {
+    width: 100%;
+  }
+  input{
+    width: 93%;
+    height: 30px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    padding: 10px;
+    @media #{$bigScreen} {
+      width: 97%;
+    }
+    @media #{$phone} {
+      padding: 3px;
+    }
+  }
+}
+.contact-sec-one-textarea {
+  width: 35%;
+  height: auto;
+  @media #{$bigScreen} {
+    width: 100%;
+  }
+  textarea{
+    width: 93%;
+    height: 115px;
+    border: 1px solid silver;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    @media #{$bigScreen} {
+      width: 97%;
+    }
+    @media #{$phone} {
+      padding: 3px;
+    }
+
+  }
+  button{
+    width: 101%;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    color: white;
+    text-transform: uppercase;
+  }
+}

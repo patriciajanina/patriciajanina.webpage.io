@@ -1,0 +1,6 @@
+$colors: ( mainColor: #2bf6ca,
+        rgba: rgba(43, 246, 202, 0.5),
+        footer: #666777 );
+button {
+  background-color: map-get($colors, mainColor);
+}

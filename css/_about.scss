@@ -1,0 +1,332 @@
+
+.about-header {
+  width: 100vw;
+  height: auto;
+}
+
+.about-header-wraper {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  background-image:url("../img/about.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-header-text-wraper {
+  width: 35vw;
+  height: 55vh;
+  margin: 30px;
+  position: relative;
+  z-index: 2;
+  background: #d4d4d4;
+  @media #{$bigScreen} {
+    width: 90vw;
+  }
+  @media #{$phone} {
+    height: 40vh;
+  }
+  h2 {
+    font-family: 'Ubuntu';
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @media #{$phone} {
+      font-size: 30px;
+    }
+  }
+  h3 {
+    margin-top: 30px;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 100;
+  }
+}
+
+//..............sectio-one
+
+.about-section-one {
+  width: 100vw;
+  height: auto;
+}
+
+.about-sec-one-wraper {
+  height: auto;
+  margin-top: 90px;
+
+}
+
+.about-sec-one-title {
+  h2 {
+    font-family: 'Lekton';
+    font-size: 24px;
+    font-weight: bold;
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+
+.about-sec-one-columns-wraper {
+  margin-top: 30px;
+  @media #{$galerymedia} {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-sec-one-column {
+    width: 30%;
+    @media #{$galerymedia} {
+      width: 100%;
+    }
+  }
+  h3 {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 26px;
+    font-weight: 100;
+  }
+  h4 {
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 24px;
+    font-weight: 100;
+  }
+}
+
+//........section-two
+.about-sec-two-wraper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about-sec-two-img {
+  width: 80%;
+  height: 55vh;
+  background-image: url("../img/about-people.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media #{$phone} {
+    height: auto;
+    width: 100%;
+  }
+  @media #{$bigScreen} {
+    width: 100%;
+  }
+}
+
+.about-sec-two-text-wraper {
+  width: 35vw;
+  height: 45vh;
+  background: map-get($colors, mainColor);
+  margin-right: -100px;
+  padding: 20px;
+  @media #{$phone} {
+    height: auto;
+    width: 100%;
+  }
+  @media #{$bigScreen} {
+    width: 80%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-family: 'Lekton';
+    font-size: 24px;
+    font-weight: bold;
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+  h3 {
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    font-weight: 100;
+    margin-top: 20px;
+  }
+}
+
+.about-sec-three-title-wraper {
+  h2 {
+    font-family: 'Lekton';
+    font-size: 24px;
+    font-weight: bold;
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+  h3 {
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}
+
+.about-sec-three-box-wraper {
+  width: 100%;
+  @media #{$bigScreen} {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.sec-three-icons {
+  width: 50%;
+  height: auto;
+  @media #{$bigScreen} {
+    width: 100%;
+  }
+  .about-sec-three-icon-column {
+    width: 80%;
+    height: auto;
+    @media #{$bigScreen} {
+      width: 90%;
+    }
+    span {
+      font-size: 40px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    h2 {
+      font-family: 'Lekton';
+      font-size: 18px;
+      font-weight: bold;
+      color: #111111;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      letter-spacing: 1px;
+    }
+    h3 {
+      font-family: 'Ubuntu';
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 100;
+    }
+  }
+}
+
+.about-sec-three-img {
+  width: 50%;
+  height: 70vh;
+  @media #{$bigScreen} {
+    width: 100%;
+    height: 70vh;
+  }
+  @media #{$phone} {
+    height: 50vh;
+  }
+  .about-sec-three-img-border {
+    width: 100%;
+    height: 90%;
+    background: url("../img/slider-img-one.jpg");
+    background-size: cover;
+    @media #{$phone} {
+      width: 100%;
+      height: 300px;
+    }
+    div {
+      width: 93%;
+      height: 93%;
+      border: 6px solid white;
+    }
+  }
+}
+
+//...section-four
+.about-sec-four-wraper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about-sec-four-title-wraper {
+  h2 {
+    font-family: 'Lekton';
+    font-size: 24px;
+    font-weight: bold;
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+  h3 {
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}
+
+.about-sec-four-image-wraper {
+  @media #{$bigScreen} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-sec-four-box-wraper {
+    width: 30%;
+    @media #{$bigScreen} {
+      width: 60%;
+      height: 350px;
+    }
+    @media #{$phone} {
+      width: 100%;
+      height: 200px;
+    }
+    div {
+      width: 100%;
+      height: 300px;
+    }
+    h3 {
+      font-family: 'Ubuntu';
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 100;
+      margin-top: 20px;
+      color: #333333;
+      margin-bottom: 30px;
+    }
+  }
+}
+.sec-four-img-one{
+  background: url("../img/team-two.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.sec-four-img-two{
+  background: url("../img/team-three.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.sec-four-img-three{
+  background: url("../img/team-one.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

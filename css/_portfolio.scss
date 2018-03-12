@@ -1,0 +1,56 @@
+.portfolio-header-wraper {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  background-image:url("../img/portfolio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.portfolio-section-one {
+  width: 100vw;
+  height: auto;
+}
+
+.portfolio-sec-one-wraper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .portfolio-sec-one-column {
+    width: 100%;
+    @media #{$galerymedia} {
+      display: flex;
+      flex-direction: column;
+    }
+    .one {
+      width: 48%;
+      height: 300px;
+      margin-bottom: 3.5%;
+      @media #{$galerymedia} {
+        width: 100%;
+      }
+    }
+  }
+}
+.portfolio-sec-one-column *, .portfolio-sec-one-column *:after, .portfolio-sec-one-column *:before{
+  box-sizing:border-box;
+}
+.portfolio-img-one{
+  background: url("../img/art.jpeg");
+  background-size: cover;
+}
+.portfolio-img-two{
+  background: url("../img/diet.jpg");
+  background-size: cover;
+}
+.portfolio-img-three{
+  background: url("../img/photoagency.jpeg");
+  background-size: cover;
+}
+.portfolio-img-four{
+  background: url("../img/project-four.jpeg");
+  background-size: cover;
+}
+
+/* A weird set of keyframes that can do anything */
+@keyframes sW_aH{ from{width:100%; height:0%;} to{width:100%; height:100%;} }
+@keyframes sW_sH{ from{width:100%; height:100%;} to{width:100%; height:100%;} }
+@keyframes aW_nH{ from{width:0%;} to{width:100%;} }
